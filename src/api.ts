@@ -26,6 +26,25 @@ export interface DocumentationEndpointAction {
   roles: string[];
   throws: string[];
   parameters: DocumentationEndpointActionParameter[];
+  parametersDeclaringType?: string;
+  returnType?: string;
+  responses: DocumentationEndpointActionResponse[];
+}
+
+export interface DocumentationEndpointActionResponse {
+  httpCode: number;
+  message?: string;
+  properties: DocumentationEndpointActionResponseProperty[];
+  typescriptDefinition?: string;
+}
+
+export interface DocumentationEndpointActionResponseProperty {
+  name: string;
+  type: string;
+  description?: string;
+  annotation?: string;
+  nullable: boolean;
+  children: DocumentationEndpointActionResponseProperty[];
 }
 
 export interface DocumentationEndpointActionParameter {

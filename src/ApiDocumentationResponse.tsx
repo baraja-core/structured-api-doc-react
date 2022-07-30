@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
-import { DocumentationEndpointActionResponse } from './ApiDocumentationBox';
-import getColorByHttpCode from './getColorByHttpCode';
+import { DocumentationEndpointActionResponse } from './api';
 import ApiDocumentationResponseTypescript from './ApiDocumentationResponseTypescript';
+import getColorByHttpCode from './getColorByHttpCode';
 
 interface ApiDocumentationResponseProps {
   response: DocumentationEndpointActionResponse;

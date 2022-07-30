@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 import { Error } from '@mui/icons-material';
-import { DocumentationEndpointAction } from './ApiDocumentationBox';
+import { DocumentationEndpointAction } from './api';
 
 interface ApiDocumentationBoxParametersProps {
   action: DocumentationEndpointAction;

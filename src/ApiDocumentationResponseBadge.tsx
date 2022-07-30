@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Box, Typography } from '@mui/material';
-import { DocumentationEndpointAction } from './ApiDocumentationBox';
+import { DocumentationEndpointAction } from './api';
 import ApiDocumentationResponse from './ApiDocumentationResponse';
 
 interface ApiDocumentationResponseBadgeProps {

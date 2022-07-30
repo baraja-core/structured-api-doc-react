@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react';
 import { Box } from '@mui/system';
-import { DocumentationEndpointAction } from './ApiDocumentationBox';
+import { DocumentationEndpointAction } from './api';
 
 interface ApiDocumentationBoxHeaderProps {
   route: string;

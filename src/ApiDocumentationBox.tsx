@@ -4,46 +4,7 @@ import { Box } from '@mui/system';
 import ApiDocumentationResponseBadge from './ApiDocumentationResponseBadge';
 import ApiDocumentationBoxParameters from './ApiDocumentationBoxParameters';
 import ApiDocumentationBoxHeader from './ApiDocumentationBoxHeader';
-
-export interface DocumentationEndpointAction {
-  name: string;
-  method: string;
-  route: string;
-  httpMethod: string;
-  methodName: string;
-  description: string | null;
-  roles: string[];
-  throws: string[];
-  parameters: DocumentationEndpointActionParameter[];
-  parametersDeclaringType?: string;
-  returnType?: string;
-  responses: DocumentationEndpointActionResponse[];
-}
-
-export interface DocumentationEndpointActionParameter {
-  position: number;
-  name: string;
-  type: string;
-  default: any | null;
-  required: boolean;
-  description: string | null;
-}
-
-export interface DocumentationEndpointActionResponse {
-  httpCode: number;
-  message?: string;
-  properties: DocumentationEndpointActionResponseProperty[];
-  typescriptDefinition?: string;
-}
-
-export interface DocumentationEndpointActionResponseProperty {
-  name: string;
-  type: string;
-  description?: string;
-  annotation?: string;
-  nullable: boolean;
-  children: DocumentationEndpointActionResponseProperty[];
-}
+import { DocumentationEndpointAction } from './api';
 
 interface ApiDocumentationBoxProps {
   route: string;
