@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import { Box } from '@mui/system';
-import { Button } from '@mui/material';
 import { DocumentationEndpoint } from './api';
 import ApiDocumentationVisibility, { EndpointVisibility } from './ApiDocumentationVisibility';
 import ApiDocumentationBox from './ApiDocumentationBox';
@@ -20,11 +19,6 @@ const ApiDocumentationEndpoint: FC<RestApiDocumentationEndpointProps> = ({ endpo
           key={key}
           route={`${endpoint.route}${action.route !== 'default' ? `/${action.route}` : ''}`}
           action={action}
-          actions={[
-            <Button size="small" variant="outlined" sx={{ padding: '0' }}>
-              TS
-            </Button>,
-          ]}
         />
       );
     })}
